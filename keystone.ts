@@ -3,8 +3,9 @@ import { text, select, relationship } from '@keystone-6/core/fields';
 
 export default config({
   db: {
-    provider: 'mysql',
-    url: 'mysql://root:root@localhost:3306/new_schema',
+    provider: 'postgresql',
+    url: 'postgres://tvpcviokodnupv:d1a2529361b066bc24021479095aeac5af42b6de8223cc59639d295c6b6997e0@ec2-44-208-88-195.compute-1.amazonaws.com:5432/ddkc184m5a00dn',
+    shadowDatabaseUrl: 'postgres://tvpcviokodnupv:d1a2529361b066bc24021479095aeac5af42b6de8223cc59639d295c6b6997e0@ec2-44-208-88-195.compute-1.amazonaws.com:5432/ddkc184m5a00dn',
     onConnect: async context => { /* ... */ },
     // Optional advanced configuration
     enableLogging: true,
