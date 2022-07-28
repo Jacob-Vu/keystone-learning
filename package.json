@@ -11,6 +11,6 @@
     "deploy": "keystone build && keystone prisma migrate deploy",
     "dev": "keystone dev",
     "postinstall": "keystone postinstall",
-    "start": "keystone start"
+    "start": "keystone build && keystone start"
   }
 }
