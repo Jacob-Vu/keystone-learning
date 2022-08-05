@@ -3,6 +3,8 @@ CREATE TABLE "User" (
     "id" UUID NOT NULL,
     "name" TEXT NOT NULL DEFAULT E'',
     "email" TEXT NOT NULL DEFAULT E'',
+    "password" TEXT,
+    "isAdmin" BOOLEAN NOT NULL DEFAULT false,
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
 );
